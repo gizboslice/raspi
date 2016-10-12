@@ -26,12 +26,12 @@ font_big = pygame.font.Font(None, 100)
 
 #MAIN LOOP
 while True:
-	#scan the buttons
-	for (k,v) in button_map.items():
-		if GPIO.input(k) == False:
-			lcd.fill(v)
-			text_surface = font_big.render('%d'%k, True, WHITE)
-			rect = text_surface.get_rect(center=(160,120))
-			lcd.blit(text_surface, rect)
-			pygame.display.update()
-	sleep(0,1)
+    # Scan the buttons
+    for (k,v) in button_map.items():
+        if GPIO.input(k) == False:
+            lcd.fill(v)
+            text_surface = font_big.render('%d'%k, True, WHITE)
+            rect = text_surface.get_rect(center=(160,120))
+            lcd.blit(text_surface, rect)
+            pygame.display.update()
+    sleep(0.1)
