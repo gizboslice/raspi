@@ -24,7 +24,7 @@ pygame.display.update()
  
 font_big = pygame.font.Font(None, 50)
  
-touch_buttons = {'1':(53.33,60), '2':(106.66,60), '3':(160,60), '4':(53.33,180), '5':(106.66,180), '6':(160,180)}
+touch_buttons = {'1':(53.33,60), '2':(160,60), '3':(266.67,60), '4':(53.33,180), '5':(160,180), '6':(266.67,180)}
  
 for k,v in touch_buttons.items():
     text_surface = font_big.render('%s'%k, True, WHITE)
